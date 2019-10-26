@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto de electiva 2</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="css/all.min.css">
+	<script src="script2.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-dark bg-primary" style="background-color: #e3f2fd;">
+		  <a class="navbar-brand" href="#"><p class="h4" style="color: white;"><i>Agenda estudiantil</i></p></a>
+		  <div class="dropdown">
+			  <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 50px;">
+			    Filtrar por
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <button type="submit" class="dropdown-item" onclick="location.href='filterCity.html';" style="cursor: pointer;">Ciudad</button>
+			    <button type="submit" class="dropdown-item" onclick="location.href='filterAge.html';" style="cursor: pointer;">Edad</button>
+			    <button type="submit" class="dropdown-item" onclick="location.href='filterGender.html';" style="cursor: pointer;">Genero</button>
+			  </div>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+		<div class="form-col" id="cards">
+			<div class="card text-white bg-primary mb-3 sized" style="max-width: 18rem;" onclick="list();">
+			  <div class="card-header">Show</div>
+				  <div class="card-body">
+				  	<p>
+				  		Listar estudiantes
+				  		<i class="fas fa-list-ol fa-3x" style="margin-left: 95px; margin-top: 2px;" /></i>
+				  	</p>
+				    
+				  </div>
+			</div>
+
+			<div class="card text-white bg-success mb-3 sized" style="max-width: 18rem;" onclick="update();">
+			  <div class="card-header">Update</div>
+				  <div class="card-body">
+				    <p>
+				    	Actualizar un estudiante
+				    	<i class="fas fa-sync-alt fa-2x" style="margin-left: 115px; margin-top: 10px;" /></i>
+				    </p>
+				  </div>
+			</div>
+
+			<div class="card text-white bg-warning mb-3 sized" style="max-width: 18rem;" onclick="add();">
+			  <div class="card-header">Add</div>
+				  <div class="card-body">
+				    <p>
+				    	Agregar nuevo estudiante
+				    	<i class="fas fa-plus fa-2x" style="margin-left: 115px; margin-top: -15px;" /></i>
+				    </p>
+				  </div>
+			</div>
+
+			<div class="card text-white bg-danger mb-3 sized" style="max-width: 18rem;" onclick="remove();">
+			  <div class="card-header">Remove</div>
+				  <div class="card-body">
+				    <p>
+				    	Eliminar estudiante
+				    	<i class="fas fa-user-times fa-2x" style="margin-left: 115px; margin-top: 5px;" /></i>
+				    </p>
+				  </div>
+			</div>
+		</div>
+	</main>
+	
+	<aside>
+		<table class="table" id="table">
+			<thead class="thead-light">
+				<tr>
+					<th scope="col">No</th>
+					<th scope="col">Codigo</th>
+					<th scope="col">Nombre</th>
+					<th scope="col">Apellidos</th>
+					<th scope="col">Birthdate</th>
+					<th scope="col">Genero</th>
+					<th scope="col">Ciudad</th>
+					<th scope="col">Correo</th>
+					<th scope="col">Contactos</th>
+				</tr>
+			</thead>
+			<tbody id="bodyTable">
+
+			</tbody>
+		</table>
+	</aside>
+
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crear estudiante</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="../script.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-dark bg-primary" style="background-color: #e3f2fd;">
+		  <a class="navbar-brand" href="#"><p class="h4" style="color: white;"><i>Agenda estudiantil</i></p></a>
+		  <div class="dropdown">
+			  <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 50px;">
+			    Filtrar por
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <button type="submit" class="dropdown-item" onclick="filter_city();" style="cursor: pointer;">Ciudad</button>
+			    <button type="submit" class="dropdown-item" onclick="filter_age();" style="cursor: pointer;">Edad</button>
+			    <button type="submit" class="dropdown-item" onclick="filter_gender();" style="cursor: pointer;">Genero</button>
+			  </div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="card" style="margin-top: 50px;">
+			<div class="card-body">
+				<h3 class="card-title">Crear estudiante</h3>
+				<div class="form-group row" style="margin-left: 100px;">
+					<label for="Codigo" class="col-form-label col-sm-1">Código</label>
+					<input type="number" class="form-control col-sm-7" id="code" placeholder="9 numeros">
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-4" style="margin-left: 120px;">
+						<label for="lastName" class="col-form-label">Apellidos</label>
+						<input type="text" id="lastName" class="form-control" onkeypress="return soloLetras(event);">
+					</div>
+					<div class="form-group col-sm-4">
+						<label for="name" class="col-form-label">Nombres</label>
+						<input type="text" id="name" class="form-control" onkeypress="return soloLetras(event);">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-4" style="margin-left: 120px;">
+						<label for="lastName" class="col-form-label">Ciudad</label>
+						<input type="email" id="city" class="form-control">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-4" style="margin-left: 120px;">
+						<label for="lastName" class="col-form-label">Correo institucional</label>
+						<input type="email" id="institutional_email" class="form-control">
+					</div>
+					<div class="form-group col-sm-4">
+						<label for="name" class="col-form-label">Correo personal</label>
+						<input type="email" id="personal_email" class="form-control">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-3" style="margin-left: 100px;">
+						<div class="form-group col-md-9">
+					      <label for="edad">Fecha de nacimiento</label>
+					      <input type="text" class="form-control" id="birthdate" placeholder="DD/MM/YYYY">
+					    </div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="genero">Género</label>
+					    <div class="form-group col-sm">
+					    	<input type="radio" name="gender" value="male" id="male" checked>Male &nbsp; &nbsp;
+					      	<input type="radio" name="gender" value="Female" id="female">Female
+					    </div>
+					</div>
+					<div class="form-group col-sm-3">
+						<div class="form-group col-md-9">
+					      <label for="telefono">Teléfono</label>
+					      <input type="number" class="form-control" id="telefono" placeholder="10 numeros">
+					    </div>
+					</div>
+				</div>
+				<div class="form-row">
+					<button class="btn btn-primary col-xs-6 col-sm-6 col-md-3 offset-md-1" onclick="agregar();" type="submit">Aceptar</button>
+					<button class="btn btn-success col-xs-6 col-sm-6 col-md-3 offset-md-3" onclick="back();" type="submit">Volver</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

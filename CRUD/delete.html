@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eliminar estudiante</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="../script.js"></script>
+</head>
+<body onload="build_delete();">
+	<header>
+		<nav class="navbar navbar-dark bg-primary" style="background-color: #e3f2fd;">
+		  <a class="navbar-brand" href="#"><p class="h4" style="color: white;"><i>Agenda estudiantil</i></p></a>
+		  <div class="dropdown">
+			  <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 50px;">
+			    Filtrar por
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <button type="submit" class="dropdown-item" onclick="filter_city();" style="cursor: pointer;">Ciudad</button>
+			    <button type="submit" class="dropdown-item" onclick="filter_age();" style="cursor: pointer;">Edad</button>
+			    <button type="submit" class="dropdown-item" onclick="filter_gender();" style="cursor: pointer;">Genero</button>
+			  </div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="card" style="margin-top: 50px;">
+			<div class="card-body">
+				<h3 class="card-title">Eliminar estudiante</h3>
+				
+				<div class="form-group">
+					<label for="Municipios" class="col-form-label">Codigos</label>
+					<select class="form-control" id="codes">
+				    	<option value="none">Selecione el codigo</option>
+				    </select>
+				</div>
+
+				<div class="form-row">
+					<button class="btn btn-primary col-xs-6 col-sm-6 col-md-3 offset-md-1" onclick="eliminar();" type="submit">Eliminar</button>
+					<button class="btn btn-success col-xs-6 col-sm-6 col-md-3 offset-md-3" onclick="back();" type="submit">Volver</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

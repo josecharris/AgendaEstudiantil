@@ -1,0 +1,17 @@
+#cards{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.sized{
+	width: 220px;
+	height: 150px;
+	cursor: pointer;
+}
+
+#table{
+	position: absolute;
+	width: 82%;
+	margin-left: 230px;
+	margin-top: -660px;
+}

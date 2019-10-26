@@ -1,0 +1,36 @@
+[
+{
+  "code":"201320674",
+  "lastName": "Torres Diaz",
+  "name": "Horacio Miguel",
+  "dateBirthday" : {
+     "day" : 28,
+     "month" : 6,
+     "year": 2001
+  },
+  "gender": "M",
+  "city": "Corrales",
+  "email": {
+    "institutional":"horacio.torres@uptc.edu.co",
+    "personal" : "horacito123@yahoo.com"
+  },
+  "phones": ["3107658902","7754523","3005639081"]
+},
+{
+  "code":"201511883",
+  "lastName": "Charris de la Rosa",
+  "name": "Jose Angel",
+  "dateBirthday" : {
+     "day" : 17,
+     "month" : 7,
+     "year": 1998
+  },
+  "gender": "M",
+  "city": "Baranquilla",
+  "email": {
+    "institutional":"jose.charris@uptc.edu.co",
+    "personal" : "joseangel9781@hotmail.com"
+  },
+  "phones": ["3227389121"]
+}
+]
